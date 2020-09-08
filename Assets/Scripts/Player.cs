@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > _canFire)
         {
             _canFire = Time.time + _fireRate;
-            float offSet = 0.8f;
+            float offSet = 1.05f;
             Instantiate(_laserPrefab, transform.position + new Vector3(0, offSet, 0), Quaternion.identity);
         }
     }
